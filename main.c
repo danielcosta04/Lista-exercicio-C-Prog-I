@@ -21,12 +21,15 @@ DiaMes - pascal case*/
 
 /*2. Ler um número inteiro e imprimir seu sucessor e seu antecessor.*/
 
-   /* int num1, sucessor, antecessor;
-    printf("Digite um número: ");
-      scanf("%d", &num1);
-      sucessor = num1 + 1;
-      antecessor = num1 - 1;
-    printf("O sucessor é: %d\n o antecessor é: %d", sucessor, antecessor);*/
+    // int num1, sucessor, antecessor;
+    // printf("Digite um número: ");
+    //   scanf("%d", &num1);
+    //   sucessor = num1 + 1;
+    //   antecessor = num1 - 1;
+     
+    // printf("\nO sucessor é: %d\n O antecessor é: %d", sucessor, antecessor);
+
+  
 
   /*3. Faça um programa que leia um valor de conta de restaurante, representando o gasto realizado pelo cliente e imprimir o valor total a ser pago, considerando que o restaurante cobra 10% de taxa de serviço do garçom.*/
 
@@ -94,25 +97,75 @@ DiaMes - pascal case*/
 
 /*7. Receber dois números reais e imprimir na tela o maior entre eles. Se ambos forem iguais, deve ser exibida uma mensagem na tela.*/
 
-  /*float num1 = 0;
-  float num2 = 0;
+  /*float numReal1 = 0;
+  float numReal2 = 0;
   printf("digite o primeiro número: ");
-  scanf("%f", &num1);
+  scanf("%f", &numReal1);
   printf("Digite o segundo número: ");
-  scanf("%f", &num2);
+  scanf("%f", &numReal2);
 
-  if(num1 > num2){
-    printf("O número maior é o primeiro: %.2f", num1);
-  }else if(num1 < num2){
-    printf("O número maior é o segundo: %.2f", num2);
+  if(numReal1 > numReal2){
+    printf("O número maior é o primeiro: %.2f", numReal1);
+  }else if(numReal1 < numReal2){
+    printf("O número maior é o segundo: %.2f", numReal2);
   }else{
     printf("Os números digitados são iguais ");
   }*/
 
 /*8. Entrar com nota da AV1 e nota da AV2 de um aluno. Imprimir: nota de cada AV, média e uma das mensagens: AP se média >= 6, RP se média < 5 ou AV3 se media >=5 e media <6 (a média é 6.0 para aprovação).*/
 
-
+  float av1, av2, av3, media;
+    printf("Digite nota da av1: ");
+      scanf("%f", &av1);
+  printf("Digite nota da av2: ");
+      scanf("%f", &av2);
+  // printf("Digite nota da av3: ");
+  //     scanf("%f", &av3);
+    media = (av1 + av2) / 2;
+  printf("\nA media das av1 e av2 é: %.2f", media);
+  if(media >= 6){
+    printf("\nAluno Aprovado.");
+  }else{
+    if(media >= 5 && media <= 6){
+      printf("\nAluno precisa realizar av3.");
+    }else{
+      printf("\nAluno Reprovado.");
+    }
+  }
+ 
+  
 /*9. Ler três números a partir do teclado e apresentá-los em ordem decrescente.*/
+  // int x1, x2, x3;
+  // printf("Digite três números: ");
+  // scanf("%d", &x1);
+  //  printf("Digite três números: ");
+  // scanf("%d", &x2);
+  //  printf("Digite três números: ");
+  // scanf("%d", &x3);
+  //   if(x1 >= x2 && x1 >= x3){
+  //     if(x2 >= x3){
+  //       printf("Os número na ordem decrescente: %d, %d, %d", x1, x2, x3);
+  //     }else{
+  //       printf("Os números na ordem decrescente: %d, %d, %d", x1, x3, x2);
+  //     }
+  //   }else{
+  //     if(x2 >= x1 && x2 >= x3){
+  //       if(x1 >= x3){
+  //         printf("Os número na ordem decrecente: %d, %d, %d", x2, x1, x3);
+  //       }else{
+  //         printf("Os números na ordem decrescente: %d, %d, %d", x2, x3, x1);
+  //       }
+  //     }else{
+  //       if(x3 >= x1 && x3 >= x2){
+  //         if(x1 >=x2){
+  //           printf("Os números na ordem decrescente: %d, %d, %d", x3, x1, x2);
+  //         }else{
+  //         printf("Os números na ordem decrescente: %d, %d, %d", x3, x2, x1);
+  //         }
+  //       }
+  //     }
+  //   }
+  
 
 /*10. Faça um programa que simule um calculador de 4 operações. Seu programa deverá ler dois números e o operador e efetuar os cálculos, exibindo o resultado final. O programa deve ser capaz de verificar operações inválidas (no caso, divisão por zero), exibindo uma mensagem de alerta. DICA: o operador deve ser declarado como char. FAÇA USANDO SWITCH.*/
   
